@@ -8,33 +8,46 @@
 
 import UIKit
 
-class PersonListViewController: UITableViewController {
+class PersonListViewController: UITableViewController, PersonPresenterDelegate {
     
-    var personsSections : NSMutableDictionary!
-    var persons : NSMutableArray!
-
+    var persons : NSMutableArray = NSMutableArray()
+    let personPresenter = PersonPresenter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        PersonService.getPersonsFromServer("2")
+        personPresenter.delegate = self
+        personPresenter.getPersonCollection()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
 
     // MARK: - Table view data source
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell: PersonCell = tableView.dequeueReusableCellWithIdentifier("PersonCell", forIndexPath:indexPath) as! PersonCell
+        
+        let person : PersonViewObject = self.persons.objectAtIndex(indexPath.row) as! PersonViewObject
+        
+        cell.labelPersonName.text = person.name
+        cell.imagePerson.loadFromUrl(person.thumbnailUrl, placeholder: UIImage(named: "placeholder")!)
+        
+        return cell
+    }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return persons.count
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    //MARK: PersonPresenterDelegate
+    func personCollectionResponse(persons: [PersonViewObject]!) {
+        self.persons.addObjectsFromArray(persons)
+        self.tableView.reloadData()
     }
-
+    
 }

@@ -7,32 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		791668D71B72999D00B12A7F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791668D01B72992D00B12A7F /* SwiftyJSON.framework */; };
+		791668D81B7299D700B12A7F /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 791668D01B72992D00B12A7F /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		791668DB1B72B36A00B12A7F /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791668D91B72B36A00B12A7F /* ENSideMenu.swift */; };
+		791668DC1B72B36A00B12A7F /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791668DA1B72B36A00B12A7F /* ENSideMenuNavigationController.swift */; };
+		791668DE1B72B3CA00B12A7F /* MenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791668DD1B72B3CA00B12A7F /* MenuNavigationController.swift */; };
+		791668E21B72B88E00B12A7F /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791668E11B72B88E00B12A7F /* MenuViewController.xib */; };
+		791668E51B72BA2D00B12A7F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791668E41B72BA2D00B12A7F /* MenuViewController.swift */; };
+		791668EA1B72C23D00B12A7F /* PersonPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791668E91B72C23D00B12A7F /* PersonPresenter.swift */; };
+		791668ED1B72C8D800B12A7F /* PersonViewObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791668EC1B72C8D800B12A7F /* PersonViewObject.swift */; };
 		795406D61B719186002F6460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795406D51B719186002F6460 /* AppDelegate.swift */; };
 		795406DD1B719186002F6460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795406DB1B719186002F6460 /* Main.storyboard */; };
 		795406DF1B719186002F6460 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 795406DE1B719186002F6460 /* Images.xcassets */; };
 		795406E21B719186002F6460 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795406E01B719186002F6460 /* LaunchScreen.xib */; };
-		795406EE1B719187002F6460 /* ios_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795406ED1B719187002F6460 /* ios_challengeTests.swift */; };
 		795406FE1B7192C7002F6460 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795406FD1B7192C7002F6460 /* User.swift */; };
 		795407021B7192E8002F6460 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795407011B7192E8002F6460 /* PersonDetailViewController.swift */; };
 		795407041B7192FB002F6460 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795407031B7192FB002F6460 /* PersonCell.swift */; };
 		795407061B719327002F6460 /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795407051B719327002F6460 /* PersonListViewController.swift */; };
-		795407091B71C1A1002F6460 /* PersonPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795407081B71C1A1002F6460 /* PersonPresenter.swift */; };
 		7954070C1B7276B1002F6460 /* PersonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954070B1B7276B1002F6460 /* PersonService.swift */; };
 		795407271B727ABE002F6460 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795407161B727990002F6460 /* Alamofire.framework */; };
 		795407281B727ABE002F6460 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 795407161B727990002F6460 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7954072D1B72861B002F6460 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954072C1B72861B002F6460 /* Location.swift */; };
 		7954072F1B72862B002F6460 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954072E1B72862B002F6460 /* Name.swift */; };
 		795407311B728636002F6460 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795407301B728636002F6460 /* Picture.swift */; };
-		CE03947450FD925A4E1B90BB /* Pods_ios_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65B1859E8549F0C1070FB55 /* Pods_ios_challengeTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		795407341B728892002F6460 /* ResponseObjectSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795407331B728892002F6460 /* ResponseObjectSerializable.swift */; };
+		795407361B7288DF002F6460 /* ResponseCollectionSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795407351B7288DF002F6460 /* ResponseCollectionSerializable.swift */; };
+		79B490C51B72D6B300CB6618 /* UIImageViewAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B490C41B72D6B300CB6618 /* UIImageViewAsync.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		795406E81B719187002F6460 /* PBXContainerItemProxy */ = {
+		791668CF1B72992D00B12A7F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 795406C81B719186002F6460 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 795406CF1B719186002F6460;
-			remoteInfo = "ios-challenge";
+			containerPortal = 791668C51B72992D00B12A7F /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		791668D11B72992D00B12A7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 791668C51B72992D00B12A7F /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFE619575BE100351305;
+			remoteInfo = "SwiftyJSON iOS Tests";
+		};
+		791668D31B72992D00B12A7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 791668C51B72992D00B12A7F /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC5B1A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX";
+		};
+		791668D51B72992D00B12A7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 791668C51B72992D00B12A7F /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC651A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX Tests";
 		};
 		795407151B727990002F6460 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -78,6 +108,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				791668D81B7299D700B12A7F /* SwiftyJSON.framework in Embed Frameworks */,
 				795407281B727ABE002F6460 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -88,25 +119,34 @@
 /* Begin PBXFileReference section */
 		0062876318259A6408B0858D /* Pods-ios-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-challengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-challengeTests/Pods-ios-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		65B557573569D84F59FA66EC /* Pods-ios-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-challengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-challengeTests/Pods-ios-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		791668C51B72992D00B12A7F /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
+		791668D91B72B36A00B12A7F /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ENSideMenu.swift; path = ../Views/ENSideMenu.swift; sourceTree = "<group>"; };
+		791668DA1B72B36A00B12A7F /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ENSideMenuNavigationController.swift; path = ../Views/ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		791668DD1B72B3CA00B12A7F /* MenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuNavigationController.swift; sourceTree = "<group>"; };
+		791668E11B72B88E00B12A7F /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		791668E41B72BA2D00B12A7F /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		791668E91B72C23D00B12A7F /* PersonPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonPresenter.swift; sourceTree = "<group>"; };
+		791668EC1B72C8D800B12A7F /* PersonViewObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewObject.swift; sourceTree = "<group>"; };
 		795406D01B719186002F6460 /* ios-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		795406D41B719186002F6460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		795406D51B719186002F6460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		795406DC1B719186002F6460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		795406DE1B719186002F6460 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		795406E11B719186002F6460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		795406E71B719187002F6460 /* ios-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		795406EC1B719187002F6460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		795406ED1B719187002F6460 /* ios_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_challengeTests.swift; sourceTree = "<group>"; };
 		795406FD1B7192C7002F6460 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		795407011B7192E8002F6460 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 		795407031B7192FB002F6460 /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		795407051B719327002F6460 /* PersonListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
-		795407081B71C1A1002F6460 /* PersonPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonPresenter.swift; sourceTree = "<group>"; };
 		7954070B1B7276B1002F6460 /* PersonService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonService.swift; sourceTree = "<group>"; };
 		7954070E1B727990002F6460 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		7954072C1B72861B002F6460 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		7954072E1B72862B002F6460 /* Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
 		795407301B728636002F6460 /* Picture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		795407331B728892002F6460 /* ResponseObjectSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObjectSerializable.swift; sourceTree = "<group>"; };
+		795407351B7288DF002F6460 /* ResponseCollectionSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCollectionSerializable.swift; sourceTree = "<group>"; };
+		79B490C41B72D6B300CB6618 /* UIImageViewAsync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewAsync.swift; sourceTree = "<group>"; };
 		C65B1859E8549F0C1070FB55 /* Pods_ios_challengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_challengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -115,15 +155,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791668D71B72999D00B12A7F /* SwiftyJSON.framework in Frameworks */,
 				795407271B727ABE002F6460 /* Alamofire.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		795406E41B719187002F6460 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE03947450FD925A4E1B90BB /* Pods_ios_challengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +180,43 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		791668C61B72992D00B12A7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				791668D01B72992D00B12A7F /* SwiftyJSON.framework */,
+				791668D21B72992D00B12A7F /* SwiftyJSON iOS Tests.xctest */,
+				791668D41B72992D00B12A7F /* SwiftyJSON.framework */,
+				791668D61B72992D00B12A7F /* SwiftyJSON OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		791668E31B72B8AD00B12A7F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				791668D91B72B36A00B12A7F /* ENSideMenu.swift */,
+				791668DA1B72B36A00B12A7F /* ENSideMenuNavigationController.swift */,
+				79B490C41B72D6B300CB6618 /* UIImageViewAsync.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		791668E81B72C23300B12A7F /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				791668E91B72C23D00B12A7F /* PersonPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		791668EB1B72C8C900B12A7F /* VO */ = {
+			isa = PBXGroup;
+			children = (
+				791668EC1B72C8D800B12A7F /* PersonViewObject.swift */,
+			);
+			path = VO;
+			sourceTree = "<group>";
+		};
 		795406C71B719186002F6460 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +225,7 @@
 				795406D11B719186002F6460 /* Products */,
 				6F156ED99FBE119D10A6AACF /* Pods */,
 				06C218CCD69D1B4DF94C47B3 /* Frameworks */,
+				791668C51B72992D00B12A7F /* SwiftyJSON.xcodeproj */,
 				7954070E1B727990002F6460 /* Alamofire.xcodeproj */,
 			);
 			sourceTree = "<group>";
@@ -163,7 +234,6 @@
 			isa = PBXGroup;
 			children = (
 				795406D01B719186002F6460 /* ios-challenge.app */,
-				795406E71B719187002F6460 /* ios-challengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,11 +245,14 @@
 				795406DB1B719186002F6460 /* Main.storyboard */,
 				795406DE1B719186002F6460 /* Images.xcassets */,
 				795406E01B719186002F6460 /* LaunchScreen.xib */,
+				791668EB1B72C8C900B12A7F /* VO */,
+				791668E81B72C23300B12A7F /* Presenters */,
+				795407321B728865002F6460 /* Helpers */,
 				795406FA1B71927B002F6460 /* Models */,
 				795406FB1B71927B002F6460 /* ViewControllers */,
 				795406FC1B71927B002F6460 /* Views */,
 				7954070A1B72768E002F6460 /* Services */,
-				795407071B71C191002F6460 /* Presenter */,
+				791668E31B72B8AD00B12A7F /* Utils */,
 				795406D31B719186002F6460 /* Supporting Files */,
 			);
 			path = "ios-challenge";
@@ -226,6 +299,8 @@
 			children = (
 				795407011B7192E8002F6460 /* PersonDetailViewController.swift */,
 				795407051B719327002F6460 /* PersonListViewController.swift */,
+				791668DD1B72B3CA00B12A7F /* MenuNavigationController.swift */,
+				791668E41B72BA2D00B12A7F /* MenuViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -234,16 +309,9 @@
 			isa = PBXGroup;
 			children = (
 				795407031B7192FB002F6460 /* PersonCell.swift */,
+				791668E11B72B88E00B12A7F /* MenuViewController.xib */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		795407071B71C191002F6460 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				795407081B71C1A1002F6460 /* PersonPresenter.swift */,
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		7954070A1B72768E002F6460 /* Services */ = {
@@ -263,6 +331,15 @@
 				7954071C1B727990002F6460 /* Alamofire OSX Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		795407321B728865002F6460 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				795407331B728892002F6460 /* ResponseObjectSerializable.swift */,
+				795407351B7288DF002F6460 /* ResponseCollectionSerializable.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,27 +364,6 @@
 			productReference = 795406D01B719186002F6460 /* ios-challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
-		795406E61B719187002F6460 /* ios-challengeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 795406F41B719187002F6460 /* Build configuration list for PBXNativeTarget "ios-challengeTests" */;
-			buildPhases = (
-				A2DCF1C7AE33894E0C3FBCE3 /* Check Pods Manifest.lock */,
-				795406E31B719187002F6460 /* Sources */,
-				795406E41B719187002F6460 /* Frameworks */,
-				795406E51B719187002F6460 /* Resources */,
-				B81B92A7B5ED2F162BF46555 /* Embed Pods Frameworks */,
-				BAEC88F0ADC333AFB030C15B /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				795406E91B719187002F6460 /* PBXTargetDependency */,
-			);
-			name = "ios-challengeTests";
-			productName = "ios-challengeTests";
-			productReference = 795406E71B719187002F6460 /* ios-challengeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -319,10 +375,6 @@
 				TargetAttributes = {
 					795406CF1B719186002F6460 = {
 						CreatedOnToolsVersion = 6.3;
-					};
-					795406E61B719187002F6460 = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = 795406CF1B719186002F6460;
 					};
 				};
 			};
@@ -342,16 +394,47 @@
 					ProductGroup = 7954070F1B727990002F6460 /* Products */;
 					ProjectRef = 7954070E1B727990002F6460 /* Alamofire.xcodeproj */;
 				},
+				{
+					ProductGroup = 791668C61B72992D00B12A7F /* Products */;
+					ProjectRef = 791668C51B72992D00B12A7F /* SwiftyJSON.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
 				795406CF1B719186002F6460 /* ios-challenge */,
-				795406E61B719187002F6460 /* ios-challengeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		791668D01B72992D00B12A7F /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 791668CF1B72992D00B12A7F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		791668D21B72992D00B12A7F /* SwiftyJSON iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON iOS Tests.xctest";
+			remoteRef = 791668D11B72992D00B12A7F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		791668D41B72992D00B12A7F /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 791668D31B72992D00B12A7F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		791668D61B72992D00B12A7F /* SwiftyJSON OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON OSX Tests.xctest";
+			remoteRef = 791668D51B72992D00B12A7F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		795407161B727990002F6460 /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -390,65 +473,11 @@
 				795406DD1B719186002F6460 /* Main.storyboard in Resources */,
 				795406E21B719186002F6460 /* LaunchScreen.xib in Resources */,
 				795406DF1B719186002F6460 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		795406E51B719187002F6460 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				791668E21B72B88E00B12A7F /* MenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A2DCF1C7AE33894E0C3FBCE3 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B81B92A7B5ED2F162BF46555 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-challengeTests/Pods-ios-challengeTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BAEC88F0ADC333AFB030C15B /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-challengeTests/Pods-ios-challengeTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		795406CC1B719186002F6460 /* Sources */ = {
@@ -456,34 +485,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				7954070C1B7276B1002F6460 /* PersonService.swift in Sources */,
+				791668DE1B72B3CA00B12A7F /* MenuNavigationController.swift in Sources */,
 				795407021B7192E8002F6460 /* PersonDetailViewController.swift in Sources */,
 				7954072D1B72861B002F6460 /* Location.swift in Sources */,
+				791668DB1B72B36A00B12A7F /* ENSideMenu.swift in Sources */,
 				795407041B7192FB002F6460 /* PersonCell.swift in Sources */,
 				795407061B719327002F6460 /* PersonListViewController.swift in Sources */,
+				791668E51B72BA2D00B12A7F /* MenuViewController.swift in Sources */,
 				795406FE1B7192C7002F6460 /* User.swift in Sources */,
 				795407311B728636002F6460 /* Picture.swift in Sources */,
+				791668ED1B72C8D800B12A7F /* PersonViewObject.swift in Sources */,
 				7954072F1B72862B002F6460 /* Name.swift in Sources */,
 				795406D61B719186002F6460 /* AppDelegate.swift in Sources */,
-				795407091B71C1A1002F6460 /* PersonPresenter.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		795406E31B719187002F6460 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				795406EE1B719187002F6460 /* ios_challengeTests.swift in Sources */,
+				791668DC1B72B36A00B12A7F /* ENSideMenuNavigationController.swift in Sources */,
+				795407361B7288DF002F6460 /* ResponseCollectionSerializable.swift in Sources */,
+				795407341B728892002F6460 /* ResponseObjectSerializable.swift in Sources */,
+				791668EA1B72C23D00B12A7F /* PersonPresenter.swift in Sources */,
+				79B490C51B72D6B300CB6618 /* UIImageViewAsync.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		795406E91B719187002F6460 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 795406CF1B719186002F6460 /* ios-challenge */;
-			targetProxy = 795406E81B719187002F6460 /* PBXContainerItemProxy */;
-		};
 		7954072A1B727ABE002F6460 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";
@@ -614,42 +638,6 @@
 			};
 			name = Release;
 		};
-		795406F51B719187002F6460 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65B557573569D84F59FA66EC /* Pods-ios-challengeTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ios-challengeTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-challenge.app/ios-challenge";
-			};
-			name = Debug;
-		};
-		795406F61B719187002F6460 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0062876318259A6408B0858D /* Pods-ios-challengeTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ios-challengeTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-challenge.app/ios-challenge";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -667,15 +655,6 @@
 			buildConfigurations = (
 				795406F21B719187002F6460 /* Debug */,
 				795406F31B719187002F6460 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		795406F41B719187002F6460 /* Build configuration list for PBXNativeTarget "ios-challengeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				795406F51B719187002F6460 /* Debug */,
-				795406F61B719187002F6460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

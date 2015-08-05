@@ -2,12 +2,14 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Master-->
         <scene sceneID="cUi-kZ-frf">
             <objects>
-                <navigationController title="Master" id="rS3-R9-Ivy" sceneMemberID="viewController">
+                <navigationController title="Master" id="rS3-R9-Ivy" customClass="MenuNavigationController" customModule="ios_challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yXu-0R-QUA">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.078431372549019607" green="0.70588235294117652" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,27 +34,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="79" id="m0d-ak-lc9" customClass="PersonCell" customModule="ios_challenge" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PersonCell" id="DYF-Jy-PGt" customClass="PersonCell" customModule="ios_challenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m0d-ak-lc9" id="d3P-M7-ByW">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DYF-Jy-PGt" id="f9Y-Bo-u8v">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MdU-ey-4qI">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="IJs-M6-JLK">
                                             <rect key="frame" x="8" y="6" width="65" height="65"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="IJs-M6-JLK" secondAttribute="height" multiplier="1:1" id="qJT-DP-pYw"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guilherme Augusto Barreto de Assis" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlT-Gy-p5Z">
-                                            <rect key="frame" x="81" y="28" width="486" height="21"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                            <color key="textColor" red="0.078431372550000003" green="0.70588235290000001" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbU-Z2-3Ze">
+                                            <rect key="frame" x="81" y="28" width="478" height="22"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="wbU-Z2-3Ze" firstAttribute="trailing" secondItem="f9Y-Bo-u8v" secondAttribute="trailingMargin" id="0ae-v5-dsE"/>
+                                        <constraint firstItem="wbU-Z2-3Ze" firstAttribute="leading" secondItem="IJs-M6-JLK" secondAttribute="trailing" constant="8" id="TMI-fv-HSH"/>
+                                        <constraint firstAttribute="centerY" secondItem="wbU-Z2-3Ze" secondAttribute="centerY" id="ijM-3x-6sv"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="IJs-M6-JLK" secondAttribute="bottom" constant="-1" id="kBc-o5-1Vi"/>
+                                        <constraint firstItem="IJs-M6-JLK" firstAttribute="leading" secondItem="f9Y-Bo-u8v" secondAttribute="leadingMargin" id="xYv-hY-rFa"/>
+                                        <constraint firstItem="IJs-M6-JLK" firstAttribute="top" secondItem="f9Y-Bo-u8v" secondAttribute="topMargin" constant="-2" id="zwq-Qi-wjr"/>
+                                    </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="Ah7-4n-0Wa" kind="show" identifier="showDetail" id="jUr-3t-vfg"/>
+                                    <outlet property="imagePerson" destination="IJs-M6-JLK" id="lZn-gz-qFr"/>
+                                    <outlet property="labelPersonName" destination="wbU-Z2-3Ze" id="SVk-BW-cdF"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -84,7 +96,7 @@
                                 <rect key="frame" x="20" y="292" width="560" height="17"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -105,4 +117,7 @@
             <point key="canvasLocation" x="1343" y="64"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="placeholder" width="520" height="245"/>
+    </resources>
 </document>

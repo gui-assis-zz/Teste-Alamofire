@@ -7,9 +7,17 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class Name: NSObject {
-    var first : String!
-    var last : String!
-    var title : String!
+class Name: ResponseObjectSerializable {
+    
+    let first : String!
+    let last : String!
+    let title : String!
+    
+    required init?(json: JSON) {
+        self.first = json["user", "name","first"].stringValue
+        self.last = json["user", "name","last"].stringValue
+        self.title = json["user", "name","title"].stringValue
+    }
 }

@@ -8,7 +8,5 @@ end
 
 target 'ios-challengeTests' do
 
-pod 'Alamofire', '~> 1.3'
-
 end
 

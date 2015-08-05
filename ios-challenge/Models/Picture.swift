@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class Picture: NSObject {
+class Picture: ResponseObjectSerializable {
     
-    var large : String!
-    var medium : String!
-    var thubnail : String!
+    let large : String!
+    let medium : String!
+    let thumbnail : String!
+    
+    required init?(json: JSON) {
+        self.large = json["user","picture","large"].stringValue
+        self.medium = json["user","picture","medium"].stringValue
+        self.thumbnail = json["user","picture","thumbnail"].stringValue
+    }
     
 }

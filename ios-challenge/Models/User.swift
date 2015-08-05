@@ -7,14 +7,36 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class User: NSObject {
+final class User: ResponseObjectSerializable, ResponseCollectionSerializable {
     
-    var name : Name!
-    var location : Location!
-    var email : String!
-    var phone : String!
-    var gender : String!
-    var picture : Picture!
+    let name : Name
+    let location : Location
+    let picture : Picture
+    let email : String!
+    let phone : String!
+    let gender : String!
+    
+    required init?(json: JSON) {
+        self.email = json["user","email"].stringValue
+        self.phone = json["user", "phone"].stringValue
+        self.gender = json["user", "gender"].stringValue
+        
+        self.name = Name(json: json)!
+        self.location = Location(json: json)!
+        self.picture = Picture(json: json)!
+    }
+    
+    static func collection(json: JSON) -> [User] {
+        var users: [User] = []
+        
+        for (index: String, subJson: JSON) in json["results"] {            
+            let user = User(json: subJson)
+            users.append(user!)
+        }
+        
+        return users
+    }
     
 }

@@ -9,10 +9,14 @@
 import UIKit
 
 class PersonCell: UITableViewCell {
+    
+    @IBOutlet var labelPersonName: UILabel!
+    @IBOutlet var imagePerson: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.imagePerson.layer.cornerRadius = self.imagePerson.bounds.size.height/2
+        self.imagePerson.clipsToBounds = true
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

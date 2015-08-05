@@ -14,6 +14,8 @@
 		<string>https://github.com/gui-assis/Teste-Alamofire.git</string>
 		<key>67620B5EFA902936DF04070AF595B76AB0333747</key>
 		<string>https://github.com/Alamofire/Alamofire.git</string>
+		<key>C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3</key>
+		<string>https://github.com/SwiftyJSON/SwiftyJSON.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ios-challenge.xcworkspace</string>
@@ -22,7 +24,9 @@
 		<key>37761E79065D3CE2B8AB87BD4FEAE80239C04B17</key>
 		<string>..</string>
 		<key>67620B5EFA902936DF04070AF595B76AB0333747</key>
-		<string>..Alamofire/</string>
+		<string>..Alamofire</string>
+		<key>C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3</key>
+		<string>../SwiftyJSON</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/gui-assis/Teste-Alamofire.git</string>
@@ -36,17 +40,25 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>67620B5EFA902936DF04070AF595B76AB0333747</string>
+			<string>37761E79065D3CE2B8AB87BD4FEAE80239C04B17</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Alamofire</string>
+			<string>ios-challenge</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>37761E79065D3CE2B8AB87BD4FEAE80239C04B17</string>
+			<string>67620B5EFA902936DF04070AF595B76AB0333747</string>
 			<key>IDESourceControlWCCName</key>
-			<string>ios-challenge</string>
+			<string>ios-challengeAlamofire</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SwiftyJSON</string>
 		</dict>
 	</array>
 </dict>

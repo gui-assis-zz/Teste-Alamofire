@@ -8,16 +8,37 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
+
+
+protocol PersonServiceDelegate{
+    func userResponse(user: User) -> Void
+    func userCollectionResponse(userCollection: [User]) -> Void
+}
 
 class PersonService: NSObject {
+    
+    var delegate : PersonServiceDelegate?
+    
+    override init() { super.init() }
+    
+    init(delegate: PersonServiceDelegate) {
+        self.delegate = delegate
+    }
 
-    class func getPersonsFromServer(quant: String) -> Void{
-        
-        Alamofire.request(.GET, String(format: "http://api.randomuser.me/?results=%@", quant)) 
-            .responseJSON { _, _, JSON, _ in
-                println(JSON)
+    func getPersonCollection() -> Void {
+        Alamofire.request(.GET, "http://api.randomuser.me/?results=100")
+            .responseCollection { (_, _, users: [User]?, _) in
+                self.delegate!.userCollectionResponse(users!)
         }
         
+    }
+    
+    func getPersonObject() -> Void {
+        Alamofire.request(.GET, "http://api.randomuser.me")
+            .responseObject { (_, _, user: User?, _) in
+                self.delegate!.userResponse(user!)
+        }
     }
     
 }

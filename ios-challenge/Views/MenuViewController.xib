@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="ios_challenge" customModuleProvider="target">
+            <connections>
+                <outlet property="labelLocation" destination="WBi-B4-Led" id="zGa-rY-12w"/>
+                <outlet property="labelName" destination="6dA-VX-yLb" id="ywZ-Ya-rot"/>
+                <outlet property="labelPhone" destination="1ck-p8-PYI" id="nUd-vN-YpD"/>
+                <outlet property="profilePicture" destination="2aA-1I-grb" id="UoI-qa-aIu"/>
+                <outlet property="view" destination="iN0-l3-epB" id="KF9-vM-4ye"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2aA-1I-grb">
+                    <rect key="frame" x="255" y="81" width="90" height="90"/>
+                    <color key="backgroundColor" red="0.078431372550000003" green="0.70588235290000001" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="7WC-nL-PcH"/>
+                        <constraint firstAttribute="height" constant="90" id="PcA-J3-eEs"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mr. Guilherme Assis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dA-VX-yLb">
+                    <rect key="frame" x="8" y="238" width="584" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Vyd-8n-9aU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rio de Janeiro, RJ, Brasil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBi-B4-Led">
+                    <rect key="frame" x="8" y="267" width="584" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="r2P-U7-wja"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(21) 98309-0611" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ck-p8-PYI">
+                    <rect key="frame" x="8" y="296" width="584" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="gST-Ot-F5p"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6dA-VX-yLb" secondAttribute="trailing" constant="8" id="5I0-UB-5z8"/>
+                <constraint firstItem="WBi-B4-Led" firstAttribute="top" secondItem="6dA-VX-yLb" secondAttribute="bottom" constant="8" id="88t-Bz-cnw"/>
+                <constraint firstItem="6dA-VX-yLb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Ash-uo-7Gt"/>
+                <constraint firstItem="1ck-p8-PYI" firstAttribute="top" secondItem="WBi-B4-Led" secondAttribute="bottom" constant="8" id="D1h-Ti-V05"/>
+                <constraint firstAttribute="centerX" secondItem="2aA-1I-grb" secondAttribute="centerX" id="RkA-eq-ZYT"/>
+                <constraint firstItem="2aA-1I-grb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="81" id="U5U-4T-Phe"/>
+                <constraint firstItem="1ck-p8-PYI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="YuP-VW-YaZ"/>
+                <constraint firstAttribute="trailing" secondItem="1ck-p8-PYI" secondAttribute="trailing" constant="8" id="aSf-Ua-y1v"/>
+                <constraint firstAttribute="trailing" secondItem="WBi-B4-Led" secondAttribute="trailing" constant="8" id="fCw-Md-1jH"/>
+                <constraint firstItem="6dA-VX-yLb" firstAttribute="top" secondItem="2aA-1I-grb" secondAttribute="bottom" constant="67" id="k4N-kR-K5j"/>
+                <constraint firstItem="WBi-B4-Led" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="qsZ-cU-GKW"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

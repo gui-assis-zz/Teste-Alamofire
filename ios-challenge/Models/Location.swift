@@ -7,10 +7,19 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class Location: NSObject {
-    var city : String!
-    var state : String!
-    var street : String!
-    var zip : String!
+final class Location: ResponseObjectSerializable {
+    
+    let city : String!
+    let state : String!
+    let street : String!
+    let zip : String!
+    
+    required init?(json: JSON) {
+        self.city = json["user","location","city"].stringValue
+        self.state = json["user","location","state"].stringValue
+        self.street = json["user","location","street"].stringValue
+        self.zip = json["user","location","zip"].stringValue
+    }
 }
