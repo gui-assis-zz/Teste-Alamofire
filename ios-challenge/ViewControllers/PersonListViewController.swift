@@ -15,7 +15,7 @@ class PersonListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        PersonService.getPersonsFromServer("2")
     }
 
     override func didReceiveMemoryWarning() {

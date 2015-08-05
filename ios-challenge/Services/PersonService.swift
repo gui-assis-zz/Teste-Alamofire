@@ -7,7 +7,17 @@
 //
 
 import UIKit
+import Alamofire
 
 class PersonService: NSObject {
+
+    class func getPersonsFromServer(quant: String) -> Void{
+        
+        Alamofire.request(.GET, String(format: "http://api.randomuser.me/?results=%@", quant)) 
+            .responseJSON { _, _, JSON, _ in
+                println(JSON)
+        }
+        
+    }
     
 }
