@@ -22,6 +22,8 @@ class PersonListViewController: UITableViewController, PersonPresenterDelegate {
         
         SwiftLoader.show(animated: true)
         
+        self.refreshControl?.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        
         personPresenter.delegate = self
         personPresenter.getPersonCollection()
     }
@@ -35,6 +37,11 @@ class PersonListViewController: UITableViewController, PersonPresenterDelegate {
             let personDetail : PersonDetailViewController = segue.destinationViewController as! PersonDetailViewController
             personDetail.person = sender as! PersonViewObject
         }
+    }
+    
+    func refresh(sender:AnyObject)
+    {
+        personPresenter.getPersonCollection()
     }
 
     // MARK: - Table view data source
@@ -64,9 +71,11 @@ class PersonListViewController: UITableViewController, PersonPresenterDelegate {
     
     //MARK: PersonPresenterDelegate
     func personCollectionResponse(persons: [PersonViewObject]!) {
+        self.persons.removeAllObjects()
         self.persons.addObjectsFromArray(persons)
         self.tableView.reloadData()
         
+        self.refreshControl?.endRefreshing()
         SwiftLoader.hide()
     }
     
