@@ -74,7 +74,20 @@
                             <outlet property="delegate" destination="pGg-6v-bdr" id="Y6K-Cp-Qkv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="As pessoa tudo" id="tQt-TN-PWz"/>
+                    <navigationItem key="navigationItem" title="As pessoa tudo" id="tQt-TN-PWz">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="BYa-Rn-FMk">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="J8A-Rc-x8x">
+                                <rect key="frame" x="16" y="7" width="20" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="menuIcon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openMenu:" destination="pGg-6v-bdr" eventType="touchUpInside" id="Cn1-IF-iiJ"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,6 +131,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="menuIcon" width="50" height="50"/>
         <image name="placeholder" width="520" height="245"/>
     </resources>
 </document>

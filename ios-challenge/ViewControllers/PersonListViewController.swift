@@ -13,8 +13,15 @@ class PersonListViewController: UITableViewController, PersonPresenterDelegate {
     var persons : NSMutableArray = NSMutableArray()
     let personPresenter = PersonPresenter()
     
+    @IBAction func openMenu(sender: AnyObject) {
+        toggleSideMenuView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SwiftLoader.show(animated: true)
+        
         personPresenter.delegate = self
         personPresenter.getPersonCollection()
     }
@@ -48,6 +55,12 @@ class PersonListViewController: UITableViewController, PersonPresenterDelegate {
     func personCollectionResponse(persons: [PersonViewObject]!) {
         self.persons.addObjectsFromArray(persons)
         self.tableView.reloadData()
+        
+        SwiftLoader.hide()
+    }
+    
+    func personProfileResponse(profilePictureUrl: String!, profileName: String, profileLocation: String, profilePhone: String) {
+        
     }
     
 }

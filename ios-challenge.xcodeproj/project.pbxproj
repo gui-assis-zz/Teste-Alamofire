@@ -33,6 +33,7 @@
 		795407341B728892002F6460 /* ResponseObjectSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795407331B728892002F6460 /* ResponseObjectSerializable.swift */; };
 		795407361B7288DF002F6460 /* ResponseCollectionSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795407351B7288DF002F6460 /* ResponseCollectionSerializable.swift */; };
 		79B490C51B72D6B300CB6618 /* UIImageViewAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B490C41B72D6B300CB6618 /* UIImageViewAsync.swift */; };
+		79B490C71B72DE3800CB6618 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B490C61B72DE3800CB6618 /* SwiftLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +148,7 @@
 		795407331B728892002F6460 /* ResponseObjectSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObjectSerializable.swift; sourceTree = "<group>"; };
 		795407351B7288DF002F6460 /* ResponseCollectionSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCollectionSerializable.swift; sourceTree = "<group>"; };
 		79B490C41B72D6B300CB6618 /* UIImageViewAsync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewAsync.swift; sourceTree = "<group>"; };
+		79B490C61B72DE3800CB6618 /* SwiftLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLoader.swift; sourceTree = "<group>"; };
 		C65B1859E8549F0C1070FB55 /* Pods_ios_challengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_challengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -194,6 +196,7 @@
 		791668E31B72B8AD00B12A7F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				79B490C61B72DE3800CB6618 /* SwiftLoader.swift */,
 				791668D91B72B36A00B12A7F /* ENSideMenu.swift */,
 				791668DA1B72B36A00B12A7F /* ENSideMenuNavigationController.swift */,
 				79B490C41B72D6B300CB6618 /* UIImageViewAsync.swift */,
@@ -502,6 +505,7 @@
 				795407341B728892002F6460 /* ResponseObjectSerializable.swift in Sources */,
 				791668EA1B72C23D00B12A7F /* PersonPresenter.swift in Sources */,
 				79B490C51B72D6B300CB6618 /* UIImageViewAsync.swift in Sources */,
+				79B490C71B72DE3800CB6618 /* SwiftLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

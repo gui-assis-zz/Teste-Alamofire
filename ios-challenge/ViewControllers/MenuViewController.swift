@@ -8,35 +8,34 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
+class MenuViewController: UIViewController, PersonPresenterDelegate {
+    
     @IBOutlet var profilePicture: UIImageView!
-
     @IBOutlet var labelPhone: UILabel!
     @IBOutlet var labelLocation: UILabel!
     @IBOutlet var labelName: UILabel!
     
+    let personPresenter = PersonPresenter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        personPresenter.delegate = self
+        personPresenter.getLoggedUserProfile()
 
         self.profilePicture.layer.cornerRadius = self.profilePicture.bounds.size.height/2
         self.profilePicture.clipsToBounds = true
-    
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func personCollectionResponse(persons: [PersonViewObject]!) {
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func personProfileResponse(profilePictureUrl: String!, profileName: String, profileLocation: String, profilePhone: String) {
+        self.profilePicture.loadFromUrl(profilePictureUrl, placeholder: UIImage(named: "placeholder")!)
+        self.labelPhone.text = profilePhone
+        self.labelLocation.text = profileLocation
+        self.labelName.text = profileName
     }
-    */
-
+    
 }

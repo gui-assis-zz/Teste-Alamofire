@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         UINavigationBar.appearance().barStyle = UIBarStyle.Black
+        
+        var config : SwiftLoader.Config = SwiftLoader.Config()
+        config.size = 150
+        config.spinnerColor = UIColor.whiteColor()
+        config.backgroundColor = UIColor(red: 90/255.0, green: 90/255.0, blue: 90/255.0, alpha: 0.6)
+        
+        SwiftLoader.setConfig(config)
+        
         return true
     }
 

@@ -19,6 +19,7 @@ class MenuNavigationController: ENSideMenuNavigationController, ENSideMenuDelega
         let screenSize: CGRect = UIScreen.mainScreen().bounds
         
         sideMenu?.menuWidth = screenSize.width * 0.75
+//        view.bringSubviewToFront(navigationBar)
     }
     
     override func didReceiveMemoryWarning() {
