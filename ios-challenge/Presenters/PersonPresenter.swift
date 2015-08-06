@@ -59,6 +59,16 @@ class PersonPresenter: NSObject, PersonServiceDelegate {
         
         let array = NSArray(array: arrayPersonViewObjects) as! [PersonViewObject]
         
-        self.delegate!.personCollectionResponse(array)
+        var sortedArray = sorted(array) {
+            (obj1, obj2) in
+            
+            // The downcast to Person is only needed if persons is an NSArray or a Swift Array of AnyObjects
+            let p1 = obj1 as PersonViewObject
+            let p2 = obj2 as PersonViewObject
+            
+            return p1.name < p2.name
+        }
+        
+        self.delegate!.personCollectionResponse(sortedArray)
     }
 }
