@@ -9,15 +9,25 @@
 import UIKit
 
 class PersonViewObject: NSObject {
-    var thumbnailUrl : String
-    var name : String
     
-    init(thumbnailUrl: String, name: String) {
+    var name : String
+    var address : String
+    var email : String
+    var phone : String
+    var gender : String
+    var pictureUrl : String
+    var thumbnailUrl : String
+    
+    init(thumbnailUrl: String, name: String, address: String, email: String, phone: String, gender: String, pictureUrl: String) {
         
-        self.thumbnailUrl = thumbnailUrl
         self.name = name
+        self.address = address
+        self.email = email
+        self.phone = phone
+        self.gender = gender
+        self.pictureUrl = pictureUrl
+        self.thumbnailUrl = thumbnailUrl
         
         super.init()
-        
     }
 }

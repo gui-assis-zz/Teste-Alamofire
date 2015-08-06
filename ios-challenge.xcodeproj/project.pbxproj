@@ -21,7 +21,6 @@
 		795406DF1B719186002F6460 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 795406DE1B719186002F6460 /* Images.xcassets */; };
 		795406E21B719186002F6460 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795406E01B719186002F6460 /* LaunchScreen.xib */; };
 		795406FE1B7192C7002F6460 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795406FD1B7192C7002F6460 /* User.swift */; };
-		795407021B7192E8002F6460 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795407011B7192E8002F6460 /* PersonDetailViewController.swift */; };
 		795407041B7192FB002F6460 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795407031B7192FB002F6460 /* PersonCell.swift */; };
 		795407061B719327002F6460 /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795407051B719327002F6460 /* PersonListViewController.swift */; };
 		7954070C1B7276B1002F6460 /* PersonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954070B1B7276B1002F6460 /* PersonService.swift */; };
@@ -34,6 +33,7 @@
 		795407361B7288DF002F6460 /* ResponseCollectionSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795407351B7288DF002F6460 /* ResponseCollectionSerializable.swift */; };
 		79B490C51B72D6B300CB6618 /* UIImageViewAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B490C41B72D6B300CB6618 /* UIImageViewAsync.swift */; };
 		79B490C71B72DE3800CB6618 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B490C61B72DE3800CB6618 /* SwiftLoader.swift */; };
+		79B490CB1B72EAC600CB6618 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B490CA1B72EAC600CB6618 /* PersonDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,7 +137,6 @@
 		795406EC1B719187002F6460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		795406ED1B719187002F6460 /* ios_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_challengeTests.swift; sourceTree = "<group>"; };
 		795406FD1B7192C7002F6460 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		795407011B7192E8002F6460 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 		795407031B7192FB002F6460 /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		795407051B719327002F6460 /* PersonListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
 		7954070B1B7276B1002F6460 /* PersonService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonService.swift; sourceTree = "<group>"; };
@@ -149,6 +148,7 @@
 		795407351B7288DF002F6460 /* ResponseCollectionSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCollectionSerializable.swift; sourceTree = "<group>"; };
 		79B490C41B72D6B300CB6618 /* UIImageViewAsync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewAsync.swift; sourceTree = "<group>"; };
 		79B490C61B72DE3800CB6618 /* SwiftLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLoader.swift; sourceTree = "<group>"; };
+		79B490CA1B72EAC600CB6618 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 		C65B1859E8549F0C1070FB55 /* Pods_ios_challengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_challengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -300,8 +300,8 @@
 		795406FB1B71927B002F6460 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				795407011B7192E8002F6460 /* PersonDetailViewController.swift */,
 				795407051B719327002F6460 /* PersonListViewController.swift */,
+				79B490CA1B72EAC600CB6618 /* PersonDetailViewController.swift */,
 				791668DD1B72B3CA00B12A7F /* MenuNavigationController.swift */,
 				791668E41B72BA2D00B12A7F /* MenuViewController.swift */,
 			);
@@ -489,13 +489,13 @@
 			files = (
 				7954070C1B7276B1002F6460 /* PersonService.swift in Sources */,
 				791668DE1B72B3CA00B12A7F /* MenuNavigationController.swift in Sources */,
-				795407021B7192E8002F6460 /* PersonDetailViewController.swift in Sources */,
 				7954072D1B72861B002F6460 /* Location.swift in Sources */,
 				791668DB1B72B36A00B12A7F /* ENSideMenu.swift in Sources */,
 				795407041B7192FB002F6460 /* PersonCell.swift in Sources */,
 				795407061B719327002F6460 /* PersonListViewController.swift in Sources */,
 				791668E51B72BA2D00B12A7F /* MenuViewController.swift in Sources */,
 				795406FE1B7192C7002F6460 /* User.swift in Sources */,
+				79B490CB1B72EAC600CB6618 /* PersonDetailViewController.swift in Sources */,
 				795407311B728636002F6460 /* Picture.swift in Sources */,
 				791668ED1B72C8D800B12A7F /* PersonViewObject.swift in Sources */,
 				7954072F1B72862B002F6460 /* Name.swift in Sources */,

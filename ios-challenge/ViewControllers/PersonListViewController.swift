@@ -29,9 +29,15 @@ class PersonListViewController: UITableViewController, PersonPresenterDelegate {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "segueToPersonDetail" {
+            let personDetail : PersonDetailViewController = segue.destinationViewController as! PersonDetailViewController
+            personDetail.person = sender as! PersonViewObject
+        }
+    }
 
     // MARK: - Table view data source
-    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: PersonCell = tableView.dequeueReusableCellWithIdentifier("PersonCell", forIndexPath:indexPath) as! PersonCell
         
@@ -51,6 +57,11 @@ class PersonListViewController: UITableViewController, PersonPresenterDelegate {
         return persons.count
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let person : PersonViewObject = self.persons.objectAtIndex(indexPath.row) as! PersonViewObject
+        self.performSegueWithIdentifier("segueToPersonDetail", sender: person)
+    }
+    
     //MARK: PersonPresenterDelegate
     func personCollectionResponse(persons: [PersonViewObject]!) {
         self.persons.addObjectsFromArray(persons)
@@ -59,7 +70,7 @@ class PersonListViewController: UITableViewController, PersonPresenterDelegate {
         SwiftLoader.hide()
     }
     
-    func personProfileResponse(profilePictureUrl: String!, profileName: String, profileLocation: String, profilePhone: String) {
+    func personProfileResponse(person: PersonViewObject) {
         
     }
     

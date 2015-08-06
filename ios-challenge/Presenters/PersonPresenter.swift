@@ -10,7 +10,7 @@ import UIKit
 
 protocol PersonPresenterDelegate{
     func personCollectionResponse(persons: [PersonViewObject]!) -> Void
-    func personProfileResponse(profilePictureUrl: String!, profileName: String, profileLocation: String, profilePhone: String) -> Void
+    func personProfileResponse(person: PersonViewObject) -> Void
 }
 
 class PersonPresenter: NSObject, PersonServiceDelegate {
@@ -32,13 +32,21 @@ class PersonPresenter: NSObject, PersonServiceDelegate {
         personService.getPersonCollection()
     }
     
-    //MARK: PersonServiceDelegate
-    
-    func userResponse(user: User) {
+    func personViewObjectFromUser(user: User) -> PersonViewObject {
         let name = String(format: "%@ %@ %@", user.name.title, user.name.first, user.name.last)
-        let location = String(format: "%@, %@ - %@", user.location.street, user.location.city, user.location.state)
+        let address = String(format: "%@, %@ - %@", user.location.street, user.location.city, user.location.state)
+        let email = user.email
+        let phone = user.phone
+        let gender = user.gender
+        let pictureUrl = user.picture.large
+        let thumbnailUrl = user.picture.thumbnail
         
-        self.delegate!.personProfileResponse(user.picture.thumbnail, profileName: name, profileLocation: location, profilePhone: user.phone)
+        return PersonViewObject(thumbnailUrl: thumbnailUrl, name: name, address: address, email: email, phone: phone, gender: gender, pictureUrl: pictureUrl)
+    }
+    
+    //MARK: PersonServiceDelegate
+    func userResponse(user: User) {
+        self.delegate!.personProfileResponse(personViewObjectFromUser(user))
     }
     
     func userCollectionResponse(userCollection: [User]) {
@@ -46,8 +54,7 @@ class PersonPresenter: NSObject, PersonServiceDelegate {
         var arrayPersonViewObjects : NSMutableArray = NSMutableArray()
         
         for user in userCollection {
-            let name = String(format: "%@ %@ %@", user.name.title, user.name.first, user.name.last)
-            arrayPersonViewObjects.addObject(PersonViewObject(thumbnailUrl: user.picture.thumbnail, name: name))
+            arrayPersonViewObjects.addObject(personViewObjectFromUser(user))
         }
         
         let array = NSArray(array: arrayPersonViewObjects) as! [PersonViewObject]

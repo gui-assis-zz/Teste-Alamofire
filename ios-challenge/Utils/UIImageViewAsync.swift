@@ -21,7 +21,6 @@ extension UIImageView {
         
         getDataFromUrl(url) { data in
             dispatch_async(dispatch_get_main_queue()) {
-                self.contentMode = UIViewContentMode.ScaleAspectFill
                 self.image = UIImage(data: data!)
             }
         }

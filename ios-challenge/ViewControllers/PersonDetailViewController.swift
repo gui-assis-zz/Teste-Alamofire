@@ -2,34 +2,37 @@
 //  PersonDetailViewController.swift
 //  ios-challenge
 //
-//  Created by Guilherme Augusto on 04/08/15.
+//  Created by Guilherme Augusto on 05/08/15.
 //  Copyright (c) 2015 mobdiq. All rights reserved.
 //
 
 import UIKit
 
 class PersonDetailViewController: UIViewController {
+    
+    var person : PersonViewObject!
 
+    @IBOutlet var imagePerson: UIImageView!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var emailLabel: UILabel!
+    @IBOutlet var addressLabel: UILabel!
+    @IBOutlet var phoneLabel: UILabel!
+    @IBOutlet var genderLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.imagePerson.loadFromUrl(person.pictureUrl, placeholder: UIImage(named: "placeholder")!)
+        self.nameLabel.text = person.name
+        self.emailLabel.text = person.email
+        self.phoneLabel.text = person.phone
+        self.genderLabel.text = person.gender
+        self.addressLabel.text = person.address
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

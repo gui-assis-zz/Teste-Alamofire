@@ -27,15 +27,15 @@ class MenuViewController: UIViewController, PersonPresenterDelegate {
         self.profilePicture.clipsToBounds = true
     }
 
-    func personCollectionResponse(persons: [PersonViewObject]!) {
-        
+    func personProfileResponse(person: PersonViewObject) {
+        self.profilePicture.loadFromUrl(person.thumbnailUrl, placeholder: UIImage(named: "placeholder")!)
+        self.labelPhone.text = person.phone
+        self.labelLocation.text = person.address
+        self.labelName.text = person.name
     }
     
-    func personProfileResponse(profilePictureUrl: String!, profileName: String, profileLocation: String, profilePhone: String) {
-        self.profilePicture.loadFromUrl(profilePictureUrl, placeholder: UIImage(named: "placeholder")!)
-        self.labelPhone.text = profilePhone
-        self.labelLocation.text = profileLocation
-        self.labelName.text = profileName
+    func personCollectionResponse(persons: [PersonViewObject]!) {
+        
     }
     
 }
